@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - powershell.exe New-Item -Path C:\path\to\your\folder -ItemType Directory
+      # Add any other build commands you need
+
+artifacts:
+  files: '**/*'
