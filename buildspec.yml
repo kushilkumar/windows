@@ -3,7 +3,8 @@ version: 0.2
 phases:
   build:
     commands:
-      - powershell.exe New-Item -Path C:\path\to\your\folder -ItemType Directory
+      - echo "Creating folder on local machine"
+      - mkdir "C:\Users\SSS2022259\pipeline"
       # Add any other build commands you need
 
 artifacts:
