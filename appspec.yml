@@ -1,0 +1,5 @@
+version: 0.0
+os: windows
+files:
+  - source: .\
+    destination: C:\Users\SSS2022259\pipeline  # Specify a destination directory where the files from your repository will be copied.
