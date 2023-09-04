@@ -2,10 +2,10 @@ version: 0.0
 os: windows
 
 files:
-  - source: /
+  - source: .
     destination: C:\Users\SSS2022259\pipeline
 
 hooks:
   - BeforeInstall:
-      - location: scripts/CreateDirectory.bat
+      - location: scripts/CreateDirectory.ps1
         timeout: 300
