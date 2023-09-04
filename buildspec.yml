@@ -3,8 +3,8 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo "Creating folder on local machine"
-      - mkdir "C:\Users\SSS2022259\pipeline"
+      - echo "Copying files to Windows server"
+      - scp -i /home/ec2-user/kushal.pem -r .git@github.com:kushilkumar/windows.git/ SSS2022259@192.168.29.183:C:\Users\SSS2022259\pipeline
       # Add any other build commands you need
 
 artifacts:
