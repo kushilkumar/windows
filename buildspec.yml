@@ -4,7 +4,7 @@ phases:
   build:
     commands:
       - echo "Copying files to Windows server"
-      - scp -i /home/ec2-user/kushal.pem -r .git@github.com:kushilkumar/windows.git/ SSS2022259@192.168.29.183:C:\Users\SSS2022259\pipeline
+      - scp -i /home/ec2-user/kushal.pem -r .git@github.com:kushilkumar/windows.git/ ec2-user@65.2.57.28:/home/ec2-user
       # Add any other build commands you need
 
 artifacts:
