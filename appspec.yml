@@ -2,8 +2,7 @@ version: 0.0
 os: windows
 files:
   - source: /
-    destination: C:\YourDeploymentDirectory
-
+    destination:
 hooks:
   - AfterInstall:
       - location: scripts/CreateFile.ps1
