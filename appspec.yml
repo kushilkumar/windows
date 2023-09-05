@@ -4,4 +4,4 @@ os: windows
 hooks:
   BeforeInstall:
   - location: scripts/CreateFile.ps1
-    timeout: 900
+    runas: administrator
