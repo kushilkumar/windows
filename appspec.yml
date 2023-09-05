@@ -3,9 +3,9 @@ os: windows
 
 files:
   - source: .
-    destination: C:\Users\SSS2022259\pipeline
+    destination: C:\YourDeploymentDirectory
 
 hooks:
-  - BeforeInstall:
-      - location: scripts/CreateDirectory.ps1
+  - AfterInstall:
+      - location: scripts/CreateFile.ps1
         timeout: 300
